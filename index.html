@@ -3,66 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gardening Tips</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pet Registration</title>
+    <!-- Link to Google Fonts for Tamil -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+Tamil&display=swap' rel='stylesheet'> 
+    <link rel="stylesheet" href="styles.css"> <!-- Links to your CSS file -->
 </head>
 <body>
     <header>
-        <h1 class="website-title">Gardening Tips</h1>
-        <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
+        <nav class="navbar">
+            <ul id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Register Pet</a></li>
+                <li><a href="#">View Registrations</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            </a>
+        </nav>
     </header>
+    <head>
+    ...
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .background-container {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
 
-    <main>
-        <section class="banner">
-            <img src="https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Banner Image">
-        </section>
 
-        <section class="welcome-section">
-            <h2>Welcome to Our Gardening Community!</h2>
-            <p>Whether you're a seasoned green thumb or just starting, our website is your go-to resource for all things gardening. Explore tips, tricks, and inspiration to help your garden flourish.</p>
-        </section>
+    <div class="background-container">
+        <main class="login-container">
+            <div class="header-section">
+                <img src="petserivice-innerbanner.jpg" alt="Pet Registration Logo" class="logo" width="250" height="150"> 
+            </div>
 
-        <section class="image-gallery">
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/3049121/pexels-photo-3049121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Gardening Tools">
-                <div class="caption">Gardening Tools</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/4033148/pexels-photo-4033148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Fresh Vegetables">
-                <div class="caption">Fresh Vegetables</div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.pexels.com/photos/4505458/pexels-photo-4505458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Flowering Plants">
-                <div class="caption">Flowering Plants</div>
-            </div>
-        </section>
+            <h1>Pet Registration Form</h1>
+            <h2>Welcome! Please fill out the form below.</h2>
 
-        <section class="content-section">
-            <div class="content-image">
-                <img src="https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Soil Preparation">
-            </div>
-            <div class="content-text">
-                <h3>The Importance of Healthy Soil</h3>
-                <p>Good soil is the foundation of a healthy garden. Learn how to amend your soil to provide the best environment for your plants to thrive. We cover everything from composting to understanding soil pH.</p>
-            </div>
-        </section>
+            <form>
+                <div class="input-group">
+                    <label for="petName">Pet Name:</label>
+                    <input type="text" id="petName" name="petName" required>
+                </div>
 
-        <section class="content-section-alternate">
-            <div class="content-text">
-                <h3>Choosing the Right Plants</h3>
-                <p>Discover which plants are best suited for your climate and space. From vibrant flowers to delicious vegetables, we provide guides to help you make the perfect choices for your garden.</p>
-            </div>
-            <div class="content-image">
-                <img src="https://images.pexels.com/photos/1275929/pexels-photo-1275929.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Plant Selection">
-            </div>
-        </section>
-    </main>
+                <div class="input-group">
+                    <label for="petBreed">Breed:</label>
+                    <input type="text" id="petBreed" name="petBreed">
+                </div>
 
-    <footer>
-        <p>&copy; 2025 Gardening Tips. All Rights Reserved.</p>
-    </footer>
+                <div class="input-group">
+                    <label for="ownerName">Owner Name:</label>
+                    <input type="text" id="ownerName" name="ownerName" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="ownerEmail">Owner Email:</label>
+                    <input type="email" id="ownerEmail" name="ownerEmail" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button type="submit">Register Pet</button>
+                </div>
+
+                <div class="links">
+                    <a href="#">Forgot Password?</a> | <a href="#">Login</a>
+                </div>
+
+                <div class="register-link">
+                    Don't have an account? <a href="#">Register Now</a>
+                </div>
+            </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script> <!-- Links to your JavaScript file -->
 </body>
 </html>
